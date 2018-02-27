@@ -26,7 +26,7 @@ namespace SupervisedLearningTool
             var metricsComputer = new MetricsComputer(confusionMatrix);
 
             var results = metricsComputer.ComputeOverallResults(3);
-            //var results = metricsComputer.ViewSpecifiedMetrics(2, 3);
+            //var results = metricsComputer.ViewSpecifiedMetrics(2, 3);  for more inputs
 
             Console.WriteLine("Classification accuracy rate is {0}% ", 100.0 * results.Accuracy);
             Console.WriteLine("Classification sensitivity rate is {0}% ", 100.0 * results.Sensitivity);
